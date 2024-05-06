@@ -23,8 +23,8 @@ exports.register = async (req, res) => {
             return res.redirect('back');
         });
     } catch (e) {
-        return res.render('404');
         console.log(e);
+        return res.render('404');
     }
 };
 
